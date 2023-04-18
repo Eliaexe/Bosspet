@@ -7,8 +7,8 @@
 }
 
 :root {
-    --colore-principale: #4D9A84; /* Esempio di variabile con nome --colore-principale e valore #FF0000 */
-    --colore-secondario: #6AB19E; /* Esempio di variabile con nome --colore-secondario e valore #00FF00 */
+    --colore-principale: #4D9A84;
+    --colore-secondario: #6AB19E;
     --colore-terziario: #5CA894;
 }
 
@@ -40,7 +40,7 @@ header img {
 }
 
 main {
-    background-image: url(./img/bakcgood.jpg);
+    background-image: url(./img/pattern.png);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -60,7 +60,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding-top: 10%; */
     width: 80%;
     height: 80%;
     text-align: center;
@@ -71,6 +70,51 @@ main {
     text-align: center;
     margin-bottom: 50px;
 }
+
+.carousel-item label {
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    background-color: transparent;
+}
+
+input[type="text"] {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+input[type="number"] {
+    width: 250px;
+    height: 70px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    color: #000000;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.mar-rig-10{
+    margin-right: 30px;
+}
+
+.d-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
 
 .carousel-item h4 {
     font-size: 30px;
@@ -101,51 +145,28 @@ form input {
     flex-direction: column;
 }
 
-/* Reset degli stili di default dell'input text */
-input {
-    border: none;
-    border-bottom: 2px solid #000; /* Colore e stile della linea inferiore */
-    outline: none; /* Rimuove l'outline di default */
-    background-color: transparent; /* Sfondo trasparente */
-}
 
-input[type="text"] {
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-  }
 
-  input[type="number"] {
-    width: 100px;
-    height: 40px;
-    padding: 5px;
-    border: none;
-    background-color: transparent;
-    color: #000000;
-    font-size: 16px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
 
-  .round-check {
-    appearance: none; /* Nasconde lo stile predefinito del checkbox */
+
+.round-check {
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 20px; /* Imposta la larghezza del checkbox */
-    height: 20px; /* Imposta l'altezza del checkbox */
-    border-radius: 50%; /* Imposta il bordo a forma di cerchio */
-    outline: none; /* Rimuove l'outline di default del checkbox */
-    border: 1px solid #000; /* Aggiunge un bordo di 1px */
-    background-color: #FFF; /* Imposta il colore di sfondo del checkbox */
-  }
-  
-  /* Stile per il segno di spunta del checkbox */
-  .round-check:checked::before {
-    content: ""; /* Aggiunge un'area vuota prima del checkbox */
-    display: block; /* Imposta come elemento blocco */
-    width: 14px; /* Imposta la larghezza del segno di spunta */
-    height: 14px; /* Imposta l'altezza del segno di spunta */
-    margin: 2px; /* Aggiunge un margine tra il segno di spunta e il bordo del checkbox */
-    border-radius: 50%; /* Imposta il bordo del segno di spunta a forma di cerchio */
-    background-color: #4D9A84; /* Imposta il colore del segno di spunta */
-  }
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #000;
+    background-color: #FFF;
+}
+
+.round-check:checked::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: #4D9A84;
+} */

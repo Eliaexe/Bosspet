@@ -16,15 +16,183 @@
         <img src="img/LOGOBOSS.png" alt="">
     </header>
     <main>
-        <button onclick="slideLeft()">
-        <img src="img/arrow-left.png" alt="">
-        </button>
+        <button onclick="slideLeft()"><img src="img/arrow-left.png" alt=""></button>
         <div class="carousel-container">
-            <form id="owner-data" class="carousel-item active">
+            <form class="carousel-item active">
+                <h3>Come si chiama il cane?</h3>
+                <input type="text">
+            </form>
+            <form class="carousel-item">
+                <h3>Quanti anni ha?</h3>
+                <input type="number">
+            </form>
+            <form class="carousel-item">
+                <h3>Quanto pesa?</h3>
+                <input type="number">
+            </form>
+            <form class="carousel-item">
+                <h3>Di che razza e?</h3>
+                <input type="text">
+            </form>
+            <form class="carousel-item">
+                <h3>Maschio o Femmina?</h3>
+                <div class="d-center">
+                    <label label for="maschio">M</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="maschio" id="">
+                </div>
+                <div class="d-center">
+                    <label for="maschio">F</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+            </form>
+            <form class="carousel-item">
+                <h3>Quale e il suo stile di vita?</h3>
+                <div class="d-center">
+                    <label label for="maschio">Molto sedentario</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="maschio" id="">
+                </div>
+                <div class="d-center">
+                    <label for="maschio">Sedentario</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+                <div class="d-center">
+                    <label label for="maschio">Attivo</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="maschio" id="">
+                </div>
+                <div class="d-center">
+                    <label for="maschio">Molto attivo</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+            </form>
+            <form class="carousel-item">
+                <h3>Di cosa ha bisogno $dog-name?</h3>
+                <div class="d-center">
+                    <label label for="maschio">Lavaggio</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="maschio" id="">
+                </div>
+                <div class="d-center">
+                    <label for="maschio">Lavaggio + taglio</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+                <div class="d-center">
+                    <label label for="maschio">Stripping</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="maschio" id="">
+                </div>
+                <div class="d-center">
+                    <label for="maschio">Ozonoterapia</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+                <div class="d-center">
+                    <label for="maschio">Bagni medicali</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+            </form>
+            <form class="carousel-item">
+                <h3>Di cosa ha bisogno $dog-name?</h3>
+                <div class="d-center">
+                    <label label for="maschio">Taglio unghie</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="maschio" id="">
+                </div>
+                <div class="d-center">
+                    <label for="maschio"> Pulizia orecchie</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+                <div class="d-center">
+                    <label label for="maschio">Rasatura zampine</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="maschio" id="">
+                </div>
+                <div class="d-center">
+                    <label for="maschio">Sistemazione frangetta e muso</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+                <div class="d-center">
+                    <label for="maschio">Sistemazione pelo zampe, sottopancia + zona intima</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+                <div class="d-center">
+                    <label for="maschio">Supplemento antiparassitario</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+            </form>
+            <form class="carousel-item">
+                <h3>Ha bisogno di un extra?</h3>
+                <div class="d-center">
+                    <label label for="maschio">Lavaggio e asciugatura di vestiti cani</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="maschio" id="">
+                </div>
+                <div class="d-center">
+                    <label for="maschio"> Dog Sitting</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+            </form>
+            <form class="carousel-item">
+                <h3>Quanto spesso $dog-name viene toelettato?</h3>
+                <div class="d-center">
+                    <label label for="maschio">30 giorni</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="maschio" id="">
+                </div>
+                <div class="d-center">
+                    <label for="maschio">60 giorni</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+            </form>
+            <form class="carousel-item">
+                <h3>Ha difficolta a relazionarsi con altri cani?</h3>
+                <div class="d-center">
+                    <label label for="maschio">cani dello stesso sesso</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="maschio" id="">
+                </div>
+                <div class="d-center">
+                    <label for="maschio"> cani del sesso opposto</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+                <div class="d-center">
+                    <label for="maschio"> tutti i cani </label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+                <div class="d-center">
+                    <label for="maschio"> va d'accordo con tutti</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+            </form>
+            <form class="carousel-item">
+                <h3>Gli piace il momento della toelettatura?</h3>
+                <div class="d-center">
+                    <label label for="maschio">si</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="maschio" id="">
+                </div>
+                <div class="d-center">
+                    <label for="maschio">no</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+                <div class="d-center">
+                    <label for="maschio">indifferente</label>
+                    <input class="round-check mar-rig-10" type="checkbox" name="femmina">
+                </div>
+            </form>
+            <form class="carousel-item">
+                <h3>E allergico a qualcosa?</h3>
+                <input type="text">
+            </form>
+            <form class="carousel-item">
+                <h3>Come si chiama il Padrone?</h3>
+                <input type="text">
+            </form>
+            <form class="carousel-item">
+                <h3>Come possiamo contattare $owner-name?</h3>
+                <input type="email">
+                <input type="tel">
+            </form>
+            <form class="carousel-item">
+                <h3>$owner-name quando e disponibile per la toelettura di $dog-name?</h3>
+                <input type="date">
+                <input type="time">
+            </form>
+            <!-- <form id="owner-data" class="carousel-item active">
                 <h3>Come si chiama il Padrone?</h3>
                 <div>
                     <label for="">Nome</label>
-                    <input type="text">
+                    <input type="text" name="">
                 </div>
                 <div>
                     <label for="">Cognome</label>
@@ -32,9 +200,9 @@
                 </div>
             </form>
             <form id="animal-data" class="carousel-item">
-                <h3>Cane</h3>
+                <h3>Come si chiama il Cane?</h3>
                 <div>
-                    <label for="">Come si chiama il Cane?</label>
+                    <label for=""></label>
                     <input type="text">
                 </div>
                 <div>
@@ -163,7 +331,7 @@
               <input type="text">
               <label for="">telefono</label>
               <input type="number">
-            </form>
+            </form> -->
         </div>
         <button onclick="slideRight()">
         <img src="img/arrow-right.png" alt="">
