@@ -22,7 +22,7 @@ header {
 }
 
 header img {
-    width: 80%;
+    height: 80%;
     opacity: 0;
     animation-name: fade-in;
     animation-duration: 2s; 
@@ -40,7 +40,7 @@ header img {
 }
 
 main {
-    background-image: url(/img/bakcgood.jpg);
+    background-image: url(./img/bakcgood.jpg);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -58,9 +58,9 @@ main {
 
 .carousel-container {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
-    padding-top: 20%;
+    /* padding-top: 10%; */
     width: 80%;
     height: 80%;
     text-align: center;
@@ -81,9 +81,19 @@ form div {
     margin-bottom: 20px;
 }
 
+.centerFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 form label {
     font-size: 24px;
     font-weight: 500;
+    margin-right: 5px;
+}
+form input {
+    margin-right: 15px;
 }
 
 .column {
@@ -97,16 +107,6 @@ input {
     border-bottom: 2px solid #000; /* Colore e stile della linea inferiore */
     outline: none; /* Rimuove l'outline di default */
     background-color: transparent; /* Sfondo trasparente */
-}
-
-/* Stile al passaggio del mouse sull'input */
-input:hover {
-    border-color: #F9C300; /* Colore della linea inferiore al passaggio del mouse */
-}
-
-/* Stile all'input in stato di focus */
-input:focus {
-    border-color: #00f; /* Colore della linea inferiore quando l'input ha il focus */
 }
 
 input[type="text"] {
@@ -127,3 +127,25 @@ input[type="text"] {
     text-align: center;
   }
 
+  .round-check {
+    appearance: none; /* Nasconde lo stile predefinito del checkbox */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px; /* Imposta la larghezza del checkbox */
+    height: 20px; /* Imposta l'altezza del checkbox */
+    border-radius: 50%; /* Imposta il bordo a forma di cerchio */
+    outline: none; /* Rimuove l'outline di default del checkbox */
+    border: 1px solid #000; /* Aggiunge un bordo di 1px */
+    background-color: #FFF; /* Imposta il colore di sfondo del checkbox */
+  }
+  
+  /* Stile per il segno di spunta del checkbox */
+  .round-check:checked::before {
+    content: ""; /* Aggiunge un'area vuota prima del checkbox */
+    display: block; /* Imposta come elemento blocco */
+    width: 14px; /* Imposta la larghezza del segno di spunta */
+    height: 14px; /* Imposta l'altezza del segno di spunta */
+    margin: 2px; /* Aggiunge un margine tra il segno di spunta e il bordo del checkbox */
+    border-radius: 50%; /* Imposta il bordo del segno di spunta a forma di cerchio */
+    background-color: #4D9A84; /* Imposta il colore del segno di spunta */
+  }
