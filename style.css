@@ -22,7 +22,8 @@ header {
 }
 
 header img {
-    height: 80%;
+    width: 50%;
+    height: auto;
     opacity: 0;
     animation-name: fade-in;
     animation-duration: 2s; 
@@ -45,7 +46,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+button {
+    width: 100px;
+    height: 50px;
 }
 
 .carousel-item {
@@ -112,6 +118,19 @@ input[type="number"] {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 630px) {
+    header img {
+        width: 90%;
+    }
+
+    .carousel-item h3{
+        font-size: 32px;
+    }
+    .carousel-item label {
+        font-size: 24px;
+    }
 }
 
 /* 
