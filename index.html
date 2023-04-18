@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Bosspet</title>
+            <!-- <h2> SABATO 22 APRILE 2023 INAUGURAZIONE BOSS PET prenotazioni aperte dal 24 Aprile 2023 </h2> -->
+</head>
+<body>
+    <header>
+        <img src="img/LOGOBOSS.png" alt="">
+    </header>
+    <main>
+        <button onclick="slideLeft()">
+        <img src="img/arrow-left.png" alt="">
+        </button>
+        <div class="carousel-container">
+            <form id="owner-data" class="carousel-item active">
+                <h3>Padrone</h3>
+                <div>
+                    <label for="">Nome</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Cognome</label>
+                    <input type="text">
+                </div>
+            </form>
+            <form id="animal-data" class="carousel-item">
+                <h3>Cane</h3>
+                <div>
+                    <label for="">Eta</label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label for="">Peso</label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label for="">Razza</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <h4 for="">Sesso</h4>
+                    <div>
+                        <label for="maschio">M</label>
+                    <input type="checkbox" name="maschio" id="">
+                    <label for="maschio">F</label>
+                    <input type="checkbox" name="femmina">
+                    </div>
+                </div>
+                <div>
+                    <h4 for="">Stile di vita</h4>
+                    <div class="column">
+                        <div>
+                            <label for="">molto sedentario</label>
+                            <input type="checkbox" name="molto sedentario" id="">
+                            <label for="">sedentario</label>
+                            <input type="checkbox" name="sedentario">
+                        </div>
+                        <div>
+                            <label for="">attivo</label>
+                            <input type="checkbox" name="attivo" id="">
+                            <label for="">molto attivo</label>
+                            <input type="checkbox" name="molto attivo">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <form id="service-data" class="carousel-item">
+                <h3>Servizio</h3>
+                <div>
+                    <h4>Toilettatura</h4>
+                    <label for="">Lavaggio</label>
+                    <input type="checkbox">
+                    <label for="">Lavaggio + taglio</label>
+                    <input type="checkbox">
+                    <label for="">Stripping</label>
+                    <input type="checkbox">
+                    <label for="">Ozonoterapia</label>
+                    <input type="checkbox">
+                    <label for="">Bagni medicali</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <h4>Complemento</h4>
+                    <label for="">Taglio unghie</label>
+                    <input type="checkbox">
+                    <label for="">Pulizia orecchie</label>
+                    <input type="checkbox">
+                    <label for="">Rasatura zampine</label>
+                    <input type="checkbox">
+                    <label for="">Sistemazione frangetta e muso</label>
+                    <input type="checkbox">
+                    <label for="">Sistemazione pelo zampe, sottopancia + zona intima</label>
+                    <input type="checkbox">
+                    <label for="">Supplemento antiparassitario</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <h4>Extra</h4>
+                    <label for="">Lavaggio e asciugatura di vestiti cani</label>
+                    <input type="checkbox">
+                    <label for=""> Dog Sitting</label>
+                    <input type="checkbox">
+                </div>
+              <label for="">Service Data</label>
+              <input type="text">
+            </form>
+            <form id="animal-manutention" class="carousel-item">
+                <h3>Informazioni tecniche</h3>
+                <div>
+                    <h4>Frequenza toelettatura</h4>
+                    <label for="">30 giorni</label>
+                    <input type="checkbox">
+                    <label for="">60 giorni</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <h4>Difficolta a relazionarsi con altri cani</h4>
+                    <label for="">cani dello stesso sesso</label>
+                    <input type="checkbox">
+                    <label for="">cani del sesso opposto</label>
+                    <input type="checkbox">
+                    <label for="">tutti i cani</label>
+                    <input type="checkbox">
+                    <label for="">va d'accordo con tutti</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <h4>Gli piace il momento della Toelettatura</h4>
+                    <label for="">si</label>
+                    <input type="checkbox">
+                    <label for="">no</label>
+                    <input type="checkbox">
+                    <label for="">indifferente</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <label for="">Allergie</label>
+                    <input type="text" name="" id="">
+                </div>
+            </form>
+            <form id="appointment-data" class="carousel-item">
+                <h3>Giorno e ora</h3>
+              <label for="">Data</label>
+              <input type="calendar">
+              <label for="">ora</label>
+              <input type="time" name="" id="">
+            </form>
+            <form id="owner-contact" class="carousel-item">
+                <h3>Come contattare il padrone</h3>
+              <label for="">email</label>
+              <input type="text">
+              <label for="">telefono</label>
+              <input type="number">
+            </form>
+        </div>
+        <button onclick="slideRight()">
+        <img src="img/arrow-right.png" alt="">
+    </button>
+    </main>
+    <script src="js/start-animation.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
