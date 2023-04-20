@@ -8,3 +8,5 @@ function scrollToMain() {
 window.addEventListener('load', function() {
     setTimeout(scrollToMain, 4000);
 });
+
+

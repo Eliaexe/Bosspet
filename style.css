@@ -40,6 +40,19 @@ header img {
     }
 }
 
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #5CA894;
+}
+section h2{
+    text-align: center;
+    font-size: 30px;
+}
+
 main {
     background-image: url(./img/pattern.png);
     height: 100vh;
@@ -47,11 +60,18 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 60px 0px;
 }
 
 button {
-    width: 100px;
+    width: 150px;
     height: 50px;
+    border-radius: 30px;
+    border: #FAD100 3px solid;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .carousel-item {
@@ -69,7 +89,15 @@ button {
     width: 80%;
     height: 80%;
     text-align: center;
+    border: #FAD100 3px solid;
+
+    opacity: 0.8;
+    backdrop-filter: blur(10px);
+
+    margin: 20px 0px;
+    border-radius: 15px;
 }
+
 
 .carousel-item h3 {
     font-size: 52px;
@@ -125,6 +153,9 @@ input[type="number"] {
         width: 90%;
     }
 
+    .mobile-padding {
+        padding: 150px 0px;
+    }
     .carousel-item h3{
         font-size: 32px;
     }
@@ -134,39 +165,6 @@ input[type="number"] {
 }
 
 /* 
-
-.carousel-item h4 {
-    font-size: 30px;
-    font-weight: 600;
-}
-
-form div {
-    margin-bottom: 20px;
-}
-
-.centerFlex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-form label {
-    font-size: 24px;
-    font-weight: 500;
-    margin-right: 5px;
-}
-form input {
-    margin-right: 15px;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
 
 .round-check {
     appearance: none;
