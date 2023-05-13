@@ -3,8 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    font-family: 'Montserrat', sans-serif;
-}
+    font-family: 'Paytone One', sans-serif;}
 
 :root {
     --colore-principale: #4D9A84;
@@ -74,7 +73,7 @@ button {
     font-weight: 500;
 }
 
-.carousel-item {
+.question {
     display: none;
 }
 
@@ -87,7 +86,7 @@ button {
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: 80%;
+    height: 90%;
     text-align: center;
     border: #FAD100 3px solid;
 
@@ -117,7 +116,8 @@ input {
     background-color: transparent;
 }
 
-input[type="text"] {
+input[type="text"]{
+    width: 50%;
     font-size: 24px;
     font-weight: 500;
     text-align: center;

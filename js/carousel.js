@@ -1,5 +1,5 @@
 let currentIndex = 0;
-const carouselItems = document.getElementsByClassName('carousel-item');
+const carouselItems = document.getElementsByClassName('question');
 
 // Funzione per scorrere a sinistra
 function slideLeft() {
